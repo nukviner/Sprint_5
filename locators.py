@@ -26,26 +26,20 @@ class TestLocators:
     #Надпись "Восстановление пароля"
     RECOVER_PASSWORD_LETTER = By.XPATH, "//h2[text()='Восстановление пароля']"
 
-    #Поле для ввода имени при регистрации
-    REG_NAME_INPUT_FIELD = By.XPATH, "//fieldset[1]/div/div/input"
+    #Поле для ввода имени
+    NAME_INPUT_FIELD = By.XPATH, "//*[text()='Имя']/following-sibling::input"
 
-    #Поле для ввода email при регистрации
-    REG_EMAIL_INPUT_FIELD = By.XPATH, "//fieldset[2]/div/div/input"
+    #Поле для ввода email
+    EMAIL_INPUT_FIELD = By.XPATH, "//*[text()='Email']/following-sibling::input"
 
-    #Поле для ввода пароля при регистрации
-    REG_PASSWORD_INPUT_FIELD = By.XPATH, "//fieldset[3]/div/div/input"
-
-    #Поле для ввода email для входа
-    EMAIL_INPUT_FIELD = By.XPATH, "//fieldset[1]/div/div/input"
-
-    #Поле для ввода пароля для входа
-    PASSWORD_INPUT_FIELD = By.XPATH, "//fieldset[2]/div/div/input"
+    #Поле для ввода пароля
+    PASSWORD_INPUT_FIELD = By.XPATH, "//*[text()='Пароль']/following-sibling::input"
 
     #Кнопка "Оформить заказ"
     CREATE_ORDER_BUTTON = By.XPATH, "//button[text()='Оформить заказ']"
 
     #Поле "Имя" в профиле
-    NAME_FIELD = By.XPATH, "//li[1]/div/div/input"
+    NAME_FIELD = By.XPATH, "//*[text()='Имя']/following-sibling::input"
 
     #Предупреждение "Некорректный пароль"
     WRONG_PASSWORD = By.XPATH, "//*[@class='input__error text_type_main-default']"
@@ -72,10 +66,10 @@ class TestLocators:
     SECTION_FILLING = By.XPATH, "//span[text()='Начинки']"
 
     #Раздел "Булки" - выбран
-    SECTION_BUN_CUR = By.XPATH, "//main/section[1]/div[1]/div[1]"
+    SECTION_BUN_CUR = By.XPATH, "//span[text()='Булки']/parent::div"
 
     #Раздел "Соусы" - выбран
-    SECTION_SAUCE_CUR = By.XPATH, "//main/section[1]/div[1]/div[2]"
+    SECTION_SAUCE_CUR = By.XPATH, "//span[text()='Соусы']/parent::div"
 
     #Раздел "Начинки" - выбран
-    SECTION_FILLING_CUR = By.XPATH, "//main/section[1]/div[1]/div[3]"
+    SECTION_FILLING_CUR = By.XPATH, "//span[text()='Начинки']/parent::div"
